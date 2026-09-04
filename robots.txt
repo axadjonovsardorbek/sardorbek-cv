@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /cv.html
+
+Sitemap: https://axadjonovsardorbek.uz/sitemap.xml

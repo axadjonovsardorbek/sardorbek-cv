@@ -3,9 +3,61 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sardorbek Axadjonov</title>
-<meta name="description" content="Portfolio of Sardorbek Axadjonov, a Go backend developer building microservices and event-driven serverless systems." />
+<title>Sardorbek Axadjonov — Go Backend Developer</title>
+<meta name="description" content="Go backend developer with 2+ years in production — microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms." />
+<meta name="author" content="Sardorbek Axadjonov" />
 <meta name="theme-color" content="#0b0a09" />
+<link rel="canonical" href="https://axadjonovsardorbek.uz/" />
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="og.png" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Sardorbek Axadjonov" />
+<meta property="og:title" content="Sardorbek Axadjonov — Go Backend Developer" />
+<meta property="og:description" content="Microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms. 2+ years of Go in production." />
+<meta property="og:url" content="https://axadjonovsardorbek.uz/" />
+<meta property="og:image" content="https://axadjonovsardorbek.uz/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Sardorbek Axadjonov — Go backend developer" />
+<meta property="og:locale" content="en_US" />
+<meta property="profile:first_name" content="Sardorbek" />
+<meta property="profile:last_name" content="Axadjonov" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sardorbek Axadjonov — Go Backend Developer" />
+<meta name="twitter:description" content="Microservices and event-driven serverless systems. 2+ years of Go in production." />
+<meta name="twitter:image" content="https://axadjonovsardorbek.uz/og.png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sardorbek Axadjonov",
+  "jobTitle": "Backend Developer",
+  "url": "https://axadjonovsardorbek.uz/",
+  "email": "mailto:axadjonovsardorbeck@gmail.com",
+  "telephone": "+998200070424",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tashkent",
+    "addressCountry": "UZ"
+  },
+  "knowsLanguage": ["uz", "ru", "en"],
+  "knowsAbout": [
+    "Go", "PostgreSQL", "Redis", "gRPC", "Knative", "CloudEvents",
+    "Microservices", "Event-driven architecture", "Serverless"
+  ],
+  "alumniOf": { "@type": "EducationalOrganization", "name": "Najot Ta'lim" },
+  "worksFor": { "@type": "Organization", "name": "UDEVS" },
+  "sameAs": [
+    "https://github.com/axadjonovsardorbek",
+    "https://www.linkedin.com/in/sardorbek-axadjonov-b28603295/",
+    "https://t.me/axadjonovsardorbek"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" />
@@ -328,6 +380,39 @@
     50% { box-shadow: 0 0 0 7px rgba(53, 192, 122, 0); }
   }
 
+  .hero-cta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: var(--f-mono);
+    font-size: var(--step--2);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem;
+    transition: transform 0.35s var(--ease), border-color 0.3s, background 0.3s, color 0.3s;
+  }
+  .btn-cv .ext {
+    color: var(--accent);
+    font-size: 0.88em;
+    letter-spacing: 0.08em;
+  }
+  .btn-cv:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
   .hero h1 {
     font-family: var(--f-display);
     font-weight: 800;
@@ -374,10 +459,10 @@
   .hero .meta-row a:hover { color: var(--accent); }
   .hero .meta-row .sep { width: 3px; height: 3px; border-radius: 50%; background: var(--line-strong); }
 
-  .hero .pill,
+  .hero .hero-cta,
   .hero .lede,
   .hero .meta-row { opacity: 0; animation: fade-up 0.9s var(--ease) forwards; }
-  .hero .pill { animation-delay: 0.05s; }
+  .hero .hero-cta { animation-delay: 0.05s; }
   .hero .lede { animation-delay: 0.36s; }
   .hero .meta-row { animation-delay: 0.48s; }
   @keyframes fade-up {
@@ -672,6 +757,114 @@
     color: var(--accent);
     line-height: 1.6;
   }
+  /* ---------- diagrams ---------- */
+  .diagram {
+    margin: 1.3rem 0 0;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line);
+  }
+  .diagram figcaption {
+    font-family: var(--f-mono);
+    font-size: var(--step--2);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .diagram .dg-note {
+    margin: 0.9rem 0 0;
+    max-width: 70ch;
+    font-family: var(--f-mono);
+    font-size: var(--step--2);
+    line-height: 1.55;
+    color: var(--muted);
+  }
+  .diagram-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .diagram svg {
+    display: block;
+    width: 100%;
+    min-width: 600px;
+    height: auto;
+  }
+  .dg-box {
+    fill: var(--surface);
+    stroke: var(--line-strong);
+    stroke-width: 1;
+  }
+  .dg-box-a {
+    fill: var(--accent-soft);
+    stroke: var(--accent);
+    stroke-width: 1;
+  }
+  .dg-t {
+    fill: var(--ink);
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .dg-t2 {
+    fill: var(--muted);
+    font-family: var(--f-mono);
+    font-size: 11px;
+  }
+  .dg-t-a {
+    fill: var(--accent);
+    font-family: var(--f-mono);
+    font-size: 11px;
+  }
+  .dg-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1.3rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line);
+  }
+  .dg-tab {
+    font-family: var(--f-mono);
+    font-size: var(--step--2);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.34rem 0.82rem;
+    cursor: pointer;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  }
+  .dg-tab:hover { color: var(--ink); border-color: var(--line-strong); }
+  .dg-tab.is-on {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .diagram.tabbed {
+    border-top: none;
+    margin-top: 0.5rem;
+    padding-top: 0.9rem;
+  }
+
+  .proj-static { cursor: default; }
+  .proj-static h3 a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .proj-static h3 a:hover { color: var(--accent); }
+
+  .dg-line { stroke: var(--line-strong); stroke-width: 1.2; fill: none; }
+  .dg-line-a { stroke: var(--accent); stroke-width: 1.2; fill: none; }
+  .dg-dash { stroke-dasharray: 4 4; }
+  .dg-head { fill: var(--line-strong); }
+  .dg-head-a { fill: var(--accent); }
+
   .tags { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag {
     font-family: var(--f-mono);
@@ -802,6 +995,41 @@
     font-size: var(--step-1);
     letter-spacing: -0.02em;
   }
+  .links .row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .links .row > a {
+    flex: 1;
+    min-width: 0;
+    border-bottom: none;
+  }
+  .copy-btn {
+    flex-shrink: 0;
+    font-family: var(--f-mono);
+    font-size: var(--step--2);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.34rem 0.8rem;
+    cursor: pointer;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+  }
+  .copy-btn:hover {
+    color: var(--ink);
+    border-color: var(--line-strong);
+    background: var(--surface-solid);
+  }
+  .copy-btn.is-done {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
 
   footer {
     padding: 2.6rem 0 3.5rem;
@@ -827,7 +1055,7 @@
     .reveal { opacity: 1; transform: none; transition: none; }
     .mark .dot, .pill .pd, .orb, .ticker ul { animation: none; }
     .hero h1 .row > span,
-    .hero .pill,
+    .hero .hero-cta,
     .hero .lede,
     .hero .meta-row { animation: none; opacity: 1; transform: none; }
     .hero-bg .cursor { display: none; }
@@ -860,7 +1088,10 @@
     <div class="cursor"></div>
   </div>
   <div class="wrap">
-    <a class="pill" href="#contact"><span class="pd"></span>Open to backend roles</a>
+    <div class="hero-cta">
+      <a class="pill" href="#contact"><span class="pd"></span>Open to backend roles</a>
+      <a class="btn-cv" href="cv.pdf" target="_blank" rel="noopener">Download CV <span class="ext">PDF</span></a>
+    </div>
     <h1><span class="row"><span>Sardorbek</span></span><span class="row"><span class="line2">Axadjonov</span></span></h1>
     <p class="lede">
       <strong>Go backend developer</strong> with 2+ years in production, building microservices
@@ -915,7 +1146,7 @@
       </div>
       <dl class="skills reveal">
         <div class="skill-row"><dt>Language</dt><dd>Go</dd></div>
-        <div class="skill-row"><dt>Data</dt><dd>PostgreSQL, Redis, MongoDB, SQL</dd></div>
+        <div class="skill-row"><dt>Data</dt><dd>PostgreSQL, pgvector, Redis, MongoDB, SQL</dd></div>
         <div class="skill-row"><dt>Services</dt><dd>REST, gRPC, Gin, chi, Knative Eventing / CloudEvents</dd></div>
         <div class="skill-row"><dt>Auth</dt><dd>JWT, OTP, Casbin (RBAC)</dd></div>
         <div class="skill-row"><dt>Storage</dt><dd>MinIO, S3, CDN</dd></div>
@@ -974,47 +1205,701 @@
         <span class="rule"></span>
       </div>
       <div class="projects">
-        <a class="proj reveal" href="https://new.centraltour.uz/en/flights" target="_blank" rel="noopener">
+        <article class="proj proj-static reveal">
           <div class="head">
-            <h3>CentralTour <span class="arrow">&#9653;</span></h3>
+            <h3><a href="https://new.centraltour.uz/en/flights" target="_blank" rel="noopener">CentralTour <span class="arrow">&#9653;</span></a></h3>
             <span class="kind">flight &amp; hotel booking platform</span>
           </div>
-          <p>Owned the markup / commission engine &mdash; 7 layered markup scopes (platform, country, aggregator, hotel, service, agency, agency-group), each percent or fixed, with coupons and loyalty unified into one discount pipeline. Froze the booking-time total so the quote is charged unchanged at payment; integrated GoGlobal, TBO, and Dida. Built the admin-panel backend solo, including hierarchical RBAC where a sub-admin inherits the creator's permissions and can never exceed them.</p>
+          <p>Owned the markup / commission engine. Rules are matched across seven dimensions &mdash; platform, geography, aggregator, service, hotel, agency, agent profile &mdash; and layered by rule level, with exactly one winner per level decided by a specificity score. Platform layers apply <em>in parallel</em> on the same net base, while partner layers <em>cascade</em>, so a subagent's price builds on the agency's cut and no other agent's markup can leak in. Non-UZS fares are priced in the provider currency first and scaled by an FX rate frozen at quote time; every quote is written as an order pricing snapshot, so payment charges exactly what was shown. Integrated GoGlobal, TBO, and Dida, and built the admin-panel backend solo.</p>
+
+          <div class="dg-tabs" role="tablist" aria-label="CentralTour architecture flows">
+            <button class="dg-tab is-on" type="button" role="tab" aria-selected="true" data-dg="rules">Rule selection</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="price">Price build-up</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="rbac">Access scope</button>
+          </div>
+
+          <figure class="diagram tabbed" data-dg-panel="rules">
+            <figcaption>Rule selection &mdash; one winner per level</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 252" role="img" aria-label="Markup rules are loaded for a rule set matched on exact platform and sales channel, filtered against the booking context, then reduced to a single winning rule per level: L1 global, L2 aggregator or service, L5 per-hotel or agency in hotel context, and L7 and above agency across all services. Ties are broken by a specificity score weighting hotel 50, agency 40, aggregator and service 20 each, and geography 10.">
+                <defs>
+                  <marker id="ah6" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+
+                <rect class="dg-box" x="0.5" y="96.5" width="150" height="58" rx="9" />
+                <text class="dg-t" x="75" y="120" text-anchor="middle">markup_rules</text>
+                <text class="dg-t2" x="75" y="137" text-anchor="middle">rule set rows</text>
+
+                <path class="dg-line" d="M151 125 H180" marker-end="url(#ah6)" />
+
+                <rect class="dg-box-a" x="184.5" y="96.5" width="196" height="58" rx="9" />
+                <text class="dg-t" x="282" y="120" text-anchor="middle">context match</text>
+                <text class="dg-t2" x="282" y="137" text-anchor="middle">platform + channel, exact</text>
+
+                <path class="dg-line" d="M381 125 H410" marker-end="url(#ah6)" />
+
+                <rect class="dg-box" x="414.5" y="18.5" width="285" height="215" rx="9" />
+                <text class="dg-t" x="557" y="42" text-anchor="middle">one rule per level</text>
+                <text class="dg-t2" x="434" y="72">L1 &mdash; global only</text>
+                <text class="dg-t2" x="434" y="92">L2 &mdash; aggregator / service</text>
+                <text class="dg-t2" x="434" y="112">L5 &mdash; per-hotel or agency</text>
+                <text class="dg-t2" x="434" y="132">L7+ &mdash; agency, all services</text>
+                <path class="dg-line" d="M434 150 H680" />
+                <text class="dg-t-a" x="557" y="173" text-anchor="middle">tie &rarr; specificity score</text>
+                <text class="dg-t2" x="557" y="194" text-anchor="middle">hotel 50 &middot; agency 40</text>
+                <text class="dg-t2" x="557" y="214" text-anchor="middle">aggregator / service 20 &middot; geo 10</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="price" hidden>
+            <figcaption>Price build-up &mdash; parallel platform, cascading partner</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 222" role="img" aria-label="The supplier net price becomes centbed net, then every winning platform rule is applied in parallel against that same base to give agent net. Partner layers then cascade — the agency layer first, then the agent's own — each computed on the running total, producing client gross. The result is written as an order pricing snapshot marked current, so payment charges the quoted amount.">
+                <defs>
+                  <marker id="ah7" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah7a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <rect class="dg-box" x="0.5" y="44.5" width="150" height="58" rx="9" />
+                <text class="dg-t" x="75" y="68" text-anchor="middle">centbed_net</text>
+                <text class="dg-t2" x="75" y="85" text-anchor="middle">supplier, FX frozen</text>
+
+                <path class="dg-line" d="M151 73 H178" marker-end="url(#ah7)" />
+
+                <rect class="dg-box-a" x="182.5" y="44.5" width="166" height="58" rx="9" />
+                <text class="dg-t" x="265" y="68" text-anchor="middle">+ platform layers</text>
+                <text class="dg-t2" x="265" y="85" text-anchor="middle">= agent_net</text>
+
+                <path class="dg-line" d="M349 73 H376" marker-end="url(#ah7)" />
+
+                <rect class="dg-box-a" x="380.5" y="44.5" width="166" height="58" rx="9" />
+                <text class="dg-t" x="463" y="68" text-anchor="middle">+ partner layers</text>
+                <text class="dg-t2" x="463" y="85" text-anchor="middle">= client_gross</text>
+
+                <path class="dg-line" d="M547 73 H574" marker-end="url(#ah7)" />
+
+                <rect class="dg-box" x="578.5" y="44.5" width="121" height="58" rx="9" />
+                <text class="dg-t" x="639" y="68" text-anchor="middle">snapshot</text>
+                <text class="dg-t2" x="639" y="85" text-anchor="middle">is_current</text>
+
+                <path class="dg-line-a dg-dash" d="M265 148 V 108" marker-end="url(#ah7a)" />
+                <path class="dg-line-a dg-dash" d="M463 148 V 108" marker-end="url(#ah7a)" />
+
+                <rect class="dg-box" x="150.5" y="152.5" width="230" height="58" rx="9" />
+                <text class="dg-t" x="265" y="176" text-anchor="middle">parallel</text>
+                <text class="dg-t2" x="265" y="193" text-anchor="middle">every rule on the same base</text>
+
+                <rect class="dg-box" x="396.5" y="152.5" width="230" height="58" rx="9" />
+                <text class="dg-t" x="511" y="176" text-anchor="middle">cascade</text>
+                <text class="dg-t2" x="511" y="193" text-anchor="middle">agency, then self, on running</text>
+
+                <text class="dg-t2" x="0" y="26">supplier_gross</text>
+                <text class="dg-t-a" x="639" y="26" text-anchor="middle">charged = quoted</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="rbac" hidden>
+            <figcaption>Access scope &mdash; what each role is allowed to see</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 268" role="img" aria-label="The default admin role bypasses scope filters entirely. Any other admin is limited to the agencies and platforms linked to it, plus the platforms reachable through those agencies. An agency owner sees agency-wide totals and both the agency and its own markup layer, while an agent, employee or subagent sees only their own bookings and their own markup layer. Scope filters are appended to every query.">
+                <defs>
+                  <marker id="ah8" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+
+                <text class="dg-t2" x="16" y="16">ROLE</text>
+                <text class="dg-t2" x="250" y="16">CAN SEE</text>
+
+                <rect class="dg-box-a" x="0.5" y="26.5" width="699" height="40" rx="8" />
+                <text class="dg-t" x="16" y="52">DEFAULT ADMIN</text>
+                <text class="dg-t2" x="250" y="52">bypass &mdash; no scope filter at all</text>
+
+                <rect class="dg-box" x="0.5" y="74.5" width="699" height="40" rx="8" />
+                <text class="dg-t" x="16" y="100">scoped admin</text>
+                <text class="dg-t2" x="250" y="100">linked agencies + platforms reached through them</text>
+
+                <rect class="dg-box" x="0.5" y="122.5" width="699" height="40" rx="8" />
+                <text class="dg-t" x="16" y="148">agency owner</text>
+                <text class="dg-t2" x="250" y="148">agency-wide totals &middot; agency layer + own self layer</text>
+
+                <rect class="dg-box" x="0.5" y="170.5" width="699" height="40" rx="8" />
+                <text class="dg-t" x="16" y="196">agent / employee</text>
+                <text class="dg-t2" x="250" y="196">own bookings only &middot; self markup layer</text>
+
+                <rect class="dg-box" x="0.5" y="218.5" width="699" height="40" rx="8" />
+                <text class="dg-t" x="16" y="244">subagent</text>
+                <text class="dg-t2" x="250" y="244">own bookings only &middot; chain = agency layer + self</text>
+              </svg>
+            </div>
+            <p class="dg-note">Scope filters are appended to every query; on nullable tenant FKs they become <code>(col IS NULL OR col IN (&hellip;))</code>.</p>
+          </figure>
+
           <div class="tags">
             <span class="tag">Go</span><span class="tag">chi</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Knative / FaaS</span>
           </div>
-        </a>
-        <a class="proj reveal" href="#contact">
+        </article>
+        <article class="proj proj-static reveal">
           <div class="head">
-            <h3>Furasentr Autopark <span class="arrow">&rarr;</span></h3>
+            <h3>Furasentr Autopark</h3>
             <span class="kind">multi-tenant fleet-management SaaS</span>
           </div>
-          <p>Built the backend for four role-based app surfaces &mdash; role &times; module &times; action permissions with per-company scoping, trip / vehicle assignment, multi-device sessions, analytics, Yandex geocoder. GPS points arrive every 20 s and buffer in Redis; a point joins the trip history only when it moves past a configurable distance (~50 m) from the last fix, otherwise it is stored as a stop point in Postgres. Load-tested to 700 RPS with k6.</p>
+          <p>Built the backend for four role-based app surfaces &mdash; per-company scoping enforced on every fleet call, with a custom role &times; module &times; action layer wired in behind a rollout flag, plus trip / vehicle assignment, multi-device sessions, analytics, and the Yandex geocoder. Telemetry keeps per-trip state in cache (<code>trip:point:&lt;id&gt;</code>, 2 h TTL) holding the last fix, distance covered, and an open stop cluster; a point older than the last one processed is rejected, and haversine against that last fix decides whether it folds into the cluster or flushes it. Access checks cache only the allow, never the block, and mileage <code>diff_km</code> is always recomputed server-side rather than trusted from the client. Load-tested to 700 RPS with k6.</p>
+
+          <div class="dg-tabs" role="tablist" aria-label="Autopark architecture flows">
+            <button class="dg-tab is-on" type="button" role="tab" aria-selected="true" data-dg="telemetry">Telemetry</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="guard">Access guard</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="listcache">List cache</button>
+          </div>
+
+          <figure class="diagram tabbed" data-dg-panel="telemetry">
+            <figcaption>Telemetry ingest &mdash; a parked hour is one row, not 180</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 240" role="img" aria-label="A GPS point from the driver app is checked against per-trip cached state, keyed trip colon point colon trip id with a two-hour TTL, and rejected if its timestamp is older than the last processed point. Haversine distance from the last fix decides the outcome: within about fifty metres the point is folded into an open stop cluster and never written, while the first point beyond the threshold flushes that cluster into one stop row with its dwell time and appends the movement to location history.">
+                <defs>
+                  <marker id="ah1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah1a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <rect class="dg-box" x="0.5" y="90.5" width="120" height="54" rx="9" />
+                <text class="dg-t" x="60" y="113" text-anchor="middle">GPS point</text>
+                <text class="dg-t2" x="60" y="130" text-anchor="middle">driver app</text>
+
+                <path class="dg-line" d="M121 117 H150" marker-end="url(#ah1)" />
+
+                <rect class="dg-box" x="158.5" y="90.5" width="140" height="54" rx="9" />
+                <text class="dg-t" x="228" y="113" text-anchor="middle">trip:point:&lt;id&gt;</text>
+                <text class="dg-t2" x="228" y="130" text-anchor="middle">cache · TTL 2 h</text>
+
+                <path class="dg-line" d="M299 117 H332" marker-end="url(#ah1)" />
+
+                <rect class="dg-box-a" x="336.5" y="90.5" width="144" height="54" rx="9" />
+                <text class="dg-t" x="408" y="113" text-anchor="middle">haversine</text>
+                <text class="dg-t2" x="408" y="130" text-anchor="middle">vs last fix</text>
+
+                <path class="dg-line dg-dash" d="M481 117 H510 V43 H556" marker-end="url(#ah1)" />
+                <text class="dg-t2" x="533" y="33" text-anchor="middle">&le; 50 m</text>
+
+                <path class="dg-line-a" d="M481 117 H510 V191 H556" marker-end="url(#ah1a)" />
+                <text class="dg-t-a" x="533" y="181" text-anchor="middle">&gt; 50 m</text>
+
+                <rect class="dg-box" x="560.5" y="16.5" width="139" height="54" rx="9" />
+                <text class="dg-t" x="630" y="39" text-anchor="middle">stop cluster</text>
+                <text class="dg-t2" x="630" y="56" text-anchor="middle">buffered, no write</text>
+
+                <rect class="dg-box-a" x="560.5" y="164.5" width="139" height="54" rx="9" />
+                <text class="dg-t" x="630" y="187" text-anchor="middle">flush cluster</text>
+                <text class="dg-t2" x="630" y="204" text-anchor="middle">1 row + dwell time</text>
+
+                <text class="dg-t2" x="0" y="26">stale point rejected</text>
+                <text class="dg-t-a" x="0" y="232">a truck parked one hour writes a single stop row, not ~180 near-identical fixes</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="guard" hidden>
+            <figcaption>Access guard &mdash; cache the yes, never the no</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 264" role="img" aria-label="On every authenticated request the access cache is consulted, then the block chain is walked across the user, their company and its owner. An allowed result is cached for thirty seconds; a blocked result is never cached, so a block takes effect on the very next call. When a block is applied it also cascades: blocking an owner drops the cached key for that owner, every company they own, and every member of those companies, so nobody keeps a stale pass.">
+                <defs>
+                  <marker id="ah11" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah11a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <text class="dg-t2" x="0" y="16">ON EVERY REQUEST</text>
+
+                <rect class="dg-box" x="0.5" y="60.5" width="126" height="52" rx="9" />
+                <text class="dg-t" x="63" y="83" text-anchor="middle">request</text>
+                <text class="dg-t2" x="63" y="100" text-anchor="middle">authenticated</text>
+
+                <path class="dg-line" d="M127 86 H154" marker-end="url(#ah11)" />
+
+                <rect class="dg-box" x="158.5" y="60.5" width="172" height="52" rx="9" />
+                <text class="dg-t" x="244" y="83" text-anchor="middle">user:access_ok:&lt;id&gt;</text>
+                <text class="dg-t2" x="244" y="100" text-anchor="middle">cache lookup</text>
+
+                <path class="dg-line" d="M331 86 H358" marker-end="url(#ah11)" />
+
+                <rect class="dg-box-a" x="362.5" y="60.5" width="138" height="52" rx="9" />
+                <text class="dg-t" x="431" y="83" text-anchor="middle">block chain</text>
+                <text class="dg-t2" x="431" y="100" text-anchor="middle">user·company·owner</text>
+
+                <path class="dg-line" d="M501 86 H524 V42 H548" marker-end="url(#ah11)" />
+                <path class="dg-line-a" d="M501 86 V130 H548" marker-end="url(#ah11a)" />
+
+                <rect class="dg-box" x="552.5" y="16.5" width="147" height="52" rx="9" />
+                <text class="dg-t" x="626" y="39" text-anchor="middle">allowed</text>
+                <text class="dg-t2" x="626" y="56" text-anchor="middle">cached 30 s</text>
+
+                <rect class="dg-box-a" x="552.5" y="104.5" width="147" height="52" rx="9" />
+                <text class="dg-t" x="626" y="127" text-anchor="middle">blocked</text>
+                <text class="dg-t2" x="626" y="144" text-anchor="middle">403 · never cached</text>
+
+                <text class="dg-t-a" x="0" y="178">only the pass is cached, so a block lands on the very next call</text>
+
+                <text class="dg-t2" x="0" y="206">WHEN A BLOCK IS APPLIED</text>
+
+                <rect class="dg-box" x="0.5" y="212.5" width="150" height="50" rx="9" />
+                <text class="dg-t" x="75" y="233" text-anchor="middle">owner blocked</text>
+                <text class="dg-t2" x="75" y="250" text-anchor="middle">or company</text>
+
+                <path class="dg-line" d="M151 237 H178" marker-end="url(#ah11)" />
+
+                <rect class="dg-box-a" x="182.5" y="212.5" width="216" height="50" rx="9" />
+                <text class="dg-t" x="290" y="233" text-anchor="middle">cascade invalidate</text>
+                <text class="dg-t2" x="290" y="250" text-anchor="middle">owner → companies → staff</text>
+
+                <path class="dg-line" d="M399 237 H426" marker-end="url(#ah11)" />
+
+                <rect class="dg-box" x="430.5" y="212.5" width="269" height="50" rx="9" />
+                <text class="dg-t" x="565" y="233" text-anchor="middle">every member's key dropped</text>
+                <text class="dg-t2" x="565" y="250" text-anchor="middle">nobody keeps a stale pass</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="listcache" hidden>
+            <figcaption>List cache &mdash; version bumps, not TTL guesses</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 228" role="img" aria-label="List filters are canonicalised and hashed so the same filters in any key order produce one cache key, the current scope version is folded into that key, and a miss is built once under singleflight. A write bumps only the version of the scopes that table feeds, leaving every other scope still served from cache; the payload TTL exists only to sweep orphaned keys.">
+                <defs>
+                  <marker id="ah12" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+
+                <text class="dg-t2" x="0" y="16">READ</text>
+
+                <rect class="dg-box" x="0.5" y="26.5" width="160" height="54" rx="9" />
+                <text class="dg-t" x="80" y="49" text-anchor="middle">list filters</text>
+                <text class="dg-t2" x="80" y="66" text-anchor="middle">any key order</text>
+
+                <path class="dg-line" d="M161 53 H188" marker-end="url(#ah12)" />
+
+                <rect class="dg-box-a" x="192.5" y="26.5" width="180" height="54" rx="9" />
+                <text class="dg-t" x="282" y="49" text-anchor="middle">canonical + hash</text>
+                <text class="dg-t2" x="282" y="66" text-anchor="middle">{a,b} = {b,a}</text>
+
+                <path class="dg-line" d="M373 53 H400" marker-end="url(#ah12)" />
+
+                <rect class="dg-box" x="404.5" y="26.5" width="140" height="54" rx="9" />
+                <text class="dg-t" x="474" y="49" text-anchor="middle">key + version</text>
+                <text class="dg-t2" x="474" y="66" text-anchor="middle">scope v7</text>
+
+                <path class="dg-line" d="M545 53 H572" marker-end="url(#ah12)" />
+
+                <rect class="dg-box" x="576.5" y="26.5" width="123" height="54" rx="9" />
+                <text class="dg-t" x="638" y="49" text-anchor="middle">singleflight</text>
+                <text class="dg-t2" x="638" y="66" text-anchor="middle">one build</text>
+
+                <text class="dg-t-a" x="0" y="100">payload TTL only sweeps orphans &mdash; the version bump is the real invalidation</text>
+
+                <text class="dg-t2" x="0" y="130">WRITE</text>
+
+                <rect class="dg-box" x="0.5" y="140.5" width="160" height="54" rx="9" />
+                <text class="dg-t" x="80" y="163" text-anchor="middle">row written</text>
+                <text class="dg-t2" x="80" y="180" text-anchor="middle">one table</text>
+
+                <path class="dg-line" d="M161 167 H188" marker-end="url(#ah12)" />
+
+                <rect class="dg-box-a" x="192.5" y="140.5" width="250" height="54" rx="9" />
+                <text class="dg-t" x="317" y="163" text-anchor="middle">bump that scope only</text>
+                <text class="dg-t2" x="317" y="180" text-anchor="middle">the scopes this table feeds</text>
+
+                <path class="dg-line" d="M443 167 H470" marker-end="url(#ah12)" />
+
+                <rect class="dg-box" x="474.5" y="140.5" width="225" height="54" rx="9" />
+                <text class="dg-t" x="587" y="163" text-anchor="middle">other scopes untouched</text>
+                <text class="dg-t2" x="587" y="180" text-anchor="middle">still served from cache</text>
+              </svg>
+            </div>
+          </figure>
+
           <div class="tags">
             <span class="tag">Go</span><span class="tag">chi</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Knative / FaaS</span><span class="tag">k6</span>
           </div>
-        </a>
-        <a class="proj reveal" href="#contact">
+        </article>
+        <article class="proj proj-static reveal">
           <div class="head">
-            <h3>Furasentr <span class="arrow">&rarr;</span></h3>
+            <h3>Furasentr</h3>
             <span class="kind">truck parts &amp; vehicles e-commerce</span>
           </div>
-          <p>Built the ordering service &mdash; native Go PDF invoicing, Click and Payme, WebP / CDN catalog image pipeline, Firebase Cloud Messaging fan-out. AI image search: a vision model reads brand and part from a photo, matched by vector similarity so the buyer lands straight on the matching parts catalog. Load-tested to 500 RPS with k6.</p>
-          <div class="tags">
-            <span class="tag">Go</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Firebase</span><span class="tag">Gemini</span>
+          <p>One of eleven Go services on the Knative stack &mdash; ordering, payment, logistics, IAM, aggregator, image search, webhook, ERP sync, vehicles, notifications. Built the ordering service (native Go PDF invoicing, Click and Payme over JSON-RPC, WebP / CDN catalog images, Firebase fan-out) plus the integrations around it: BuckyDrop for cross-border purchase orders, Measoft for delivery &mdash; pickup points, rate calculator, status tracking &mdash; and an OX ERP sync for products, shops, and warehouses. AI image search is a two-step flow over pgvector: Gemini locates every part in the photo and returns a crop each, and only the crop the buyer taps is embedded and searched, because searching all of them up front does database work for parts nobody opens. The catalog endpoint that carries the load reads through a 30-second in-process cache fronted by <code>singleflight</code>, so a burst of identical requests on a cold key collapses into one database load, and IAM hands back a rotated refresh token on every renewal. Load-tested with k6 at 500 RPS on a constant-arrival-rate executor.</p>
+
+          <div class="dg-tabs" role="tablist" aria-label="Furasentr architecture flows">
+            <button class="dg-tab is-on" type="button" role="tab" aria-selected="true" data-dg="imgsearch">Image search</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="fallback">Match fallback</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="catalog">Catalog at load</button>
           </div>
-        </a>
-        <a class="proj reveal" href="https://imedteam.uz" target="_blank" rel="noopener">
+
+          <figure class="diagram tabbed" data-dg-panel="imgsearch">
+            <figcaption>Two-step search &mdash; pay for the crop the buyer actually taps</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 268" role="img" aria-label="Step one: an uploaded photo goes to Gemini vision, which locates and labels every part and returns one crop each with its bounding box and Uzbek, Russian and English labels — no database work yet. The buyer taps one crop. Step two: that crop is embedded by Gemini in a goroutine while the brand and language are resolved from the database at the same moment, and both feed a pgvector similarity search with a score floor and delta window that returns ranked products.">
+                <defs>
+                  <marker id="ah5" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah5a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <rect class="dg-box" x="0.5" y="20.5" width="118" height="52" rx="9" />
+                <text class="dg-t" x="59" y="43" text-anchor="middle">photo</text>
+                <text class="dg-t2" x="59" y="60" text-anchor="middle">upload</text>
+
+                <path class="dg-line" d="M119 46 H142" marker-end="url(#ah5)" />
+
+                <rect class="dg-box-a" x="146.5" y="20.5" width="176" height="52" rx="9" />
+                <text class="dg-t" x="234" y="43" text-anchor="middle">Gemini vision</text>
+                <text class="dg-t2" x="234" y="60" text-anchor="middle">locate + label</text>
+
+                <path class="dg-line" d="M323 46 H346" marker-end="url(#ah5)" />
+
+                <rect class="dg-box" x="350.5" y="20.5" width="150" height="52" rx="9" />
+                <text class="dg-t" x="425" y="43" text-anchor="middle">crop per part</text>
+                <text class="dg-t2" x="425" y="60" text-anchor="middle">box_2d · uz/ru/en</text>
+
+                <path class="dg-line" d="M501 46 H524" marker-end="url(#ah5)" />
+
+                <rect class="dg-box" x="528.5" y="20.5" width="171" height="52" rx="9" />
+                <text class="dg-t" x="614" y="43" text-anchor="middle">buyer taps one</text>
+                <text class="dg-t2" x="614" y="60" text-anchor="middle">no DB work yet</text>
+
+                <path class="dg-line" d="M614 74 V92 M205 92 H614" />
+                <path class="dg-line-a" d="M205 92 V108" marker-end="url(#ah5a)" />
+                <path class="dg-line-a" d="M495 92 V108" marker-end="url(#ah5a)" />
+                <text class="dg-t-a" x="0" y="98">in parallel</text>
+
+                <rect class="dg-box-a" x="90.5" y="112.5" width="230" height="52" rx="9" />
+                <text class="dg-t" x="205" y="135" text-anchor="middle">embed crop</text>
+                <text class="dg-t2" x="205" y="152" text-anchor="middle">Gemini · goroutine</text>
+
+                <rect class="dg-box" x="380.5" y="112.5" width="230" height="52" rx="9" />
+                <text class="dg-t" x="495" y="135" text-anchor="middle">resolve brand + lang</text>
+                <text class="dg-t2" x="495" y="152" text-anchor="middle">DB · same moment</text>
+
+                <path class="dg-line" d="M205 166 V182 H230 V196" marker-end="url(#ah5)" />
+                <path class="dg-line" d="M495 166 V182 H350 V196" marker-end="url(#ah5)" />
+
+                <rect class="dg-box-a" x="140.5" y="200.5" width="300" height="52" rx="9" />
+                <text class="dg-t" x="290" y="223" text-anchor="middle">pgvector similarity</text>
+                <text class="dg-t2" x="290" y="240" text-anchor="middle">score floor + delta window</text>
+
+                <path class="dg-line" d="M441 226 H476" marker-end="url(#ah5)" />
+
+                <rect class="dg-box" x="480.5" y="200.5" width="219" height="52" rx="9" />
+                <text class="dg-t" x="590" y="223" text-anchor="middle">ranked products</text>
+                <text class="dg-t2" x="590" y="240" text-anchor="middle">one part, one query</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="fallback" hidden>
+            <figcaption>Two fallbacks &mdash; widen rather than return nothing</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 226" role="img" aria-label="The vehicle filter tries an exact brand and model match, falls back to brand only when that resolves nothing, and finally searches the whole catalogue unfiltered. The name filter runs the vector search alongside part-name patterns, and when that returns no rows it re-runs on the vector alone and flags the response as not name-filtered.">
+                <defs>
+                  <marker id="ah9" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah9a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <text class="dg-t2" x="0" y="18">VEHICLE FILTER</text>
+
+                <rect class="dg-box-a" x="0.5" y="28.5" width="180" height="54" rx="9" />
+                <text class="dg-t" x="90" y="51" text-anchor="middle">brand + model</text>
+                <text class="dg-t2" x="90" y="68" text-anchor="middle">brand_models_id</text>
+
+                <path class="dg-line-a dg-dash" d="M181 55 H228" marker-end="url(#ah9a)" />
+                <text class="dg-t-a" x="205" y="45" text-anchor="middle">0 rows</text>
+
+                <rect class="dg-box" x="232.5" y="28.5" width="160" height="54" rx="9" />
+                <text class="dg-t" x="312" y="51" text-anchor="middle">brand only</text>
+                <text class="dg-t2" x="312" y="68" text-anchor="middle">brands_id</text>
+
+                <path class="dg-line-a dg-dash" d="M393 55 H440" marker-end="url(#ah9a)" />
+                <text class="dg-t-a" x="417" y="45" text-anchor="middle">0 rows</text>
+
+                <rect class="dg-box" x="444.5" y="28.5" width="255" height="54" rx="9" />
+                <text class="dg-t" x="572" y="51" text-anchor="middle">catalogue-wide</text>
+                <text class="dg-t2" x="572" y="68" text-anchor="middle">no vehicle filter</text>
+
+                <text class="dg-t2" x="0" y="128">NAME FILTER</text>
+
+                <rect class="dg-box-a" x="0.5" y="138.5" width="280" height="54" rx="9" />
+                <text class="dg-t" x="140" y="161" text-anchor="middle">vector + name patterns</text>
+                <text class="dg-t2" x="140" y="178" text-anchor="middle">score floor dropped to 0</text>
+
+                <path class="dg-line-a dg-dash" d="M281 165 H336" marker-end="url(#ah9a)" />
+                <text class="dg-t-a" x="308" y="155" text-anchor="middle">0 rows</text>
+
+                <rect class="dg-box" x="340.5" y="138.5" width="359" height="54" rx="9" />
+                <text class="dg-t" x="520" y="161" text-anchor="middle">vector only</text>
+                <text class="dg-t2" x="520" y="178" text-anchor="middle">response flagged name_filtered: false</text>
+
+                <text class="dg-t2" x="350" y="218" text-anchor="middle">brand names matched both directions, whitespace and hyphens stripped &mdash; &ldquo;XF 106&rdquo; = &ldquo;XF106&rdquo;</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="catalog" hidden>
+            <figcaption>Holding load &mdash; collapse the reads, ingest each image once</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 236" role="img" aria-label="Catalog reads hit a thirty-second in-process cache keyed by language, page and every filter; on a miss the load is wrapped in singleflight so concurrent identical requests share a single database query. Catalog images from the ERP are keyed by their source URL, so a repeat sync reuses the existing CDN files, and a new one is decoded from any of five formats and stored as four WebP variants at 1920, 1024 and 512 pixels behind a CDN.">
+                <defs>
+                  <marker id="ah10" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+
+                <text class="dg-t2" x="0" y="16">CATALOG READ</text>
+
+                <rect class="dg-box" x="0.5" y="26.5" width="150" height="54" rx="9" />
+                <text class="dg-t" x="75" y="49" text-anchor="middle">list request</text>
+                <text class="dg-t2" x="75" y="66" text-anchor="middle">lang · page · filters</text>
+
+                <path class="dg-line" d="M151 53 H178" marker-end="url(#ah10)" />
+
+                <rect class="dg-box" x="182.5" y="26.5" width="150" height="54" rx="9" />
+                <text class="dg-t" x="257" y="49" text-anchor="middle">mem cache</text>
+                <text class="dg-t2" x="257" y="66" text-anchor="middle">sync.Map · 30 s</text>
+
+                <path class="dg-line" d="M333 53 H360" marker-end="url(#ah10)" />
+                <text class="dg-t-a" x="346" y="44" text-anchor="middle">miss</text>
+
+                <rect class="dg-box-a" x="364.5" y="26.5" width="160" height="54" rx="9" />
+                <text class="dg-t" x="444" y="49" text-anchor="middle">singleflight.Do</text>
+                <text class="dg-t2" x="444" y="66" text-anchor="middle">keyed by cache key</text>
+
+                <path class="dg-line" d="M525 53 H552" marker-end="url(#ah10)" />
+
+                <rect class="dg-box" x="556.5" y="26.5" width="143" height="54" rx="9" />
+                <text class="dg-t" x="628" y="49" text-anchor="middle">one DB load</text>
+                <text class="dg-t2" x="628" y="66" text-anchor="middle">others share it</text>
+
+                <text class="dg-t-a" x="0" y="102">a burst of identical requests on a cold key becomes exactly one query</text>
+
+                <text class="dg-t2" x="0" y="132">ERP IMAGE INGEST</text>
+
+                <rect class="dg-box" x="0.5" y="142.5" width="140" height="54" rx="9" />
+                <text class="dg-t" x="70" y="165" text-anchor="middle">source URL</text>
+                <text class="dg-t2" x="70" y="182" text-anchor="middle">from OX ERP</text>
+
+                <path class="dg-line" d="M141 169 H168" marker-end="url(#ah10)" />
+
+                <rect class="dg-box-a" x="172.5" y="142.5" width="170" height="54" rx="9" />
+                <text class="dg-t" x="257" y="165" text-anchor="middle">cdn_upload:&lt;url&gt;</text>
+                <text class="dg-t2" x="257" y="182" text-anchor="middle">seen before?</text>
+
+                <path class="dg-line" d="M343 169 H370" marker-end="url(#ah10)" />
+                <text class="dg-t-a" x="356" y="160" text-anchor="middle">new</text>
+
+                <rect class="dg-box" x="374.5" y="142.5" width="150" height="54" rx="9" />
+                <text class="dg-t" x="449" y="165" text-anchor="middle">decode + resize</text>
+                <text class="dg-t2" x="449" y="182" text-anchor="middle">5 input formats</text>
+
+                <path class="dg-line" d="M525 169 H552" marker-end="url(#ah10)" />
+
+                <rect class="dg-box" x="556.5" y="142.5" width="143" height="54" rx="9" />
+                <text class="dg-t" x="628" y="165" text-anchor="middle">4 WebP variants</text>
+                <text class="dg-t2" x="628" y="182" text-anchor="middle">1920/1024/512 → CDN</text>
+
+                <text class="dg-t2" x="0" y="218">same source URL again → existing CDN files reused, nothing re-downloaded or re-encoded</text>
+              </svg>
+            </div>
+          </figure>
+
+          <div class="tags">
+            <span class="tag">Go</span><span class="tag">PostgreSQL</span><span class="tag">pgvector</span><span class="tag">Redis</span><span class="tag">Gemini</span><span class="tag">Firebase</span><span class="tag">k6</span>
+          </div>
+        </article>
+        <article class="proj proj-static reveal">
           <div class="head">
-            <h3>iMed <span class="arrow">&#9653;</span></h3>
+            <h3><a href="https://imedteam.uz" target="_blank" rel="noopener">iMed <span class="arrow">&#9653;</span></a></h3>
             <span class="kind">online learning platform &middot; imedteam.uz</span>
           </div>
           <p>Sole backend for the web-admin and mobile REST APIs &mdash; phone-OTP + JWT auth with Casbin RBAC, Firebase push, a Telegram ops bot, and a YouTube&rarr;S3 video pipeline (yt-dlp with a PO-token sidecar to clear bot checks without cookies) served through a CDN. Click Merchant API with MD5-signed, row-locked idempotent handlers (<code>SELECT &hellip; FOR UPDATE</code>) so retried callbacks never double-charge or double-enrol. Promo-code engine &mdash; percent / fixed, per-user and total caps, validity windows, per-course scope &mdash; enforced by a redemptions ledger with partial unique indexes and cancel / expire release triggers. Versioned Redis cache: an <code>entity:version</code> counter bumped on every write is folded into the cache key, so stale lists expire by TTL with no SCAN / KEYS.</p>
+          <div class="dg-tabs" role="tablist" aria-label="iMed architecture flows">
+            <button class="dg-tab is-on" type="button" role="tab" aria-selected="true" data-dg="pay">Payment</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="cache">Cache invalidation</button>
+            <button class="dg-tab" type="button" role="tab" aria-selected="false" data-dg="video">Video ingest</button>
+          </div>
+
+          <figure class="diagram tabbed" data-dg-panel="pay">
+            <figcaption>Click payment &mdash; idempotent under retries</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 178" role="img" aria-label="A Click callback is MD5-signature verified, the order row is locked with SELECT FOR UPDATE, then marked PAID with course enrolment. A retried callback replays the same path and returns an identical response.">
+                <defs>
+                  <marker id="ah2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah2a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <rect class="dg-box" x="0.5" y="34.5" width="120" height="58" rx="9" />
+                <text class="dg-t" x="60" y="59" text-anchor="middle">Click</text>
+                <text class="dg-t2" x="60" y="76" text-anchor="middle">callback</text>
+
+                <path class="dg-line" d="M121 63 H155" marker-end="url(#ah2)" />
+
+                <rect class="dg-box" x="158.5" y="34.5" width="156" height="58" rx="9" />
+                <text class="dg-t" x="236" y="59" text-anchor="middle">MD5 sign</text>
+                <text class="dg-t2" x="236" y="76" text-anchor="middle">verify</text>
+
+                <path class="dg-line" d="M315 63 H349" marker-end="url(#ah2)" />
+
+                <rect class="dg-box-a" x="352.5" y="34.5" width="156" height="58" rx="9" />
+                <text class="dg-t" x="430" y="59" text-anchor="middle">FOR UPDATE</text>
+                <text class="dg-t2" x="430" y="76" text-anchor="middle">row lock</text>
+
+                <path class="dg-line" d="M509 63 H543" marker-end="url(#ah2)" />
+
+                <rect class="dg-box" x="546.5" y="34.5" width="153" height="58" rx="9" />
+                <text class="dg-t" x="623" y="59" text-anchor="middle">PAID</text>
+                <text class="dg-t2" x="623" y="76" text-anchor="middle">+ enrolment</text>
+
+                <path class="dg-line-a dg-dash" d="M623 93 C623 148, 236 148, 236 96" marker-end="url(#ah2a)" />
+                <text class="dg-t-a" x="430" y="171" text-anchor="middle">retry &rarr; identical response, no double charge</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="cache" hidden>
+            <figcaption>Versioned cache &mdash; invalidation without SCAN</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 222" role="img" aria-label="Reads fetch a version counter from Redis and fold it into the cache key. Any write increments that counter, so every key built from the previous version becomes unreachable and expires on its own five-minute TTL, with no SCAN or KEYS sweep.">
+                <defs>
+                  <marker id="ah3" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah3a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <text class="dg-t2" x="0" y="14">READ</text>
+                <rect class="dg-box" x="0.5" y="24.5" width="132" height="54" rx="9" />
+                <text class="dg-t" x="66" y="47" text-anchor="middle">list request</text>
+                <text class="dg-t2" x="66" y="64" text-anchor="middle">page, filters</text>
+
+                <path class="dg-line" d="M133 51 H159" marker-end="url(#ah3)" />
+
+                <rect class="dg-box" x="162.5" y="24.5" width="176" height="54" rx="9" />
+                <text class="dg-t" x="250" y="47" text-anchor="middle">GET entity:version</text>
+                <text class="dg-t2" x="250" y="64" text-anchor="middle">&rarr; v7</text>
+
+                <path class="dg-line" d="M339 51 H365" marker-end="url(#ah3)" />
+
+                <rect class="dg-box-a" x="368.5" y="24.5" width="160" height="54" rx="9" />
+                <text class="dg-t" x="448" y="47" text-anchor="middle">cache key</text>
+                <text class="dg-t2" x="448" y="64" text-anchor="middle">list:v7_page:1</text>
+
+                <path class="dg-line" d="M529 51 H555" marker-end="url(#ah3)" />
+
+                <rect class="dg-box" x="558.5" y="24.5" width="141" height="54" rx="9" />
+                <text class="dg-t" x="629" y="47" text-anchor="middle">Redis</text>
+                <text class="dg-t2" x="629" y="64" text-anchor="middle">TTL 5 min</text>
+
+                <path class="dg-line-a dg-dash" d="M250 146 V 84" marker-end="url(#ah3a)" />
+                <text class="dg-t-a" x="260" y="118">bumps</text>
+
+                <text class="dg-t2" x="0" y="138">WRITE</text>
+                <rect class="dg-box" x="0.5" y="148.5" width="132" height="54" rx="9" />
+                <text class="dg-t" x="66" y="171" text-anchor="middle">create</text>
+                <text class="dg-t2" x="66" y="188" text-anchor="middle">update / delete</text>
+
+                <path class="dg-line" d="M133 175 H159" marker-end="url(#ah3)" />
+
+                <rect class="dg-box-a" x="162.5" y="148.5" width="176" height="54" rx="9" />
+                <text class="dg-t" x="250" y="171" text-anchor="middle">INCR entity:version</text>
+                <text class="dg-t2" x="250" y="188" text-anchor="middle">v7 &rarr; v8</text>
+
+                <path class="dg-line" d="M339 175 H365" marker-end="url(#ah3)" />
+
+                <rect class="dg-box" x="368.5" y="148.5" width="331" height="54" rx="9" />
+                <text class="dg-t" x="534" y="171" text-anchor="middle">every v7 key is now unreachable</text>
+                <text class="dg-t2" x="534" y="188" text-anchor="middle">drops out on TTL &mdash; no SCAN / KEYS sweep</text>
+              </svg>
+            </div>
+          </figure>
+
+          <figure class="diagram tabbed" data-dg-panel="video" hidden>
+            <figcaption>YouTube &rarr; S3 ingest &mdash; getting past the bot wall</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 212" role="img" aria-label="A lesson YouTube URL is downloaded by yt-dlp, which is backed by a PO-token sidecar that clears the bot check without cookies and a writable cookie-state volume that survives the read-only image. The file passes a minimum-size guard before being uploaded to S3 and served through a CDN.">
+                <defs>
+                  <marker id="ah4" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                  <marker id="ah4a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head-a" />
+                  </marker>
+                </defs>
+
+                <rect class="dg-box" x="0.5" y="26.5" width="126" height="54" rx="9" />
+                <text class="dg-t" x="63" y="49" text-anchor="middle">lesson URL</text>
+                <text class="dg-t2" x="63" y="66" text-anchor="middle">youtube.com</text>
+
+                <path class="dg-line" d="M127 53 H151" marker-end="url(#ah4)" />
+
+                <rect class="dg-box-a" x="154.5" y="26.5" width="160" height="54" rx="9" />
+                <text class="dg-t" x="234" y="49" text-anchor="middle">yt-dlp</text>
+                <text class="dg-t2" x="234" y="66" text-anchor="middle">download mp4</text>
+
+                <path class="dg-line" d="M315 53 H339" marker-end="url(#ah4)" />
+
+                <rect class="dg-box" x="342.5" y="26.5" width="136" height="54" rx="9" />
+                <text class="dg-t" x="410" y="49" text-anchor="middle">size guard</text>
+                <text class="dg-t2" x="410" y="66" text-anchor="middle">&ge; 2 KB or fail</text>
+
+                <path class="dg-line" d="M479 53 H503" marker-end="url(#ah4)" />
+
+                <rect class="dg-box" x="506.5" y="26.5" width="193" height="54" rx="9" />
+                <text class="dg-t" x="603" y="49" text-anchor="middle">S3 &rarr; CDN</text>
+                <text class="dg-t2" x="603" y="66" text-anchor="middle">youtube/&lt;id&gt;.mp4</text>
+
+                <path class="dg-line-a dg-dash" d="M165 146 V 116 H 200 V 86" marker-end="url(#ah4a)" />
+                <path class="dg-line-a dg-dash" d="M423 146 V 116 H 270 V 86" marker-end="url(#ah4a)" />
+
+                <rect class="dg-box-a" x="60.5" y="148.5" width="210" height="54" rx="9" />
+                <text class="dg-t" x="165" y="171" text-anchor="middle">PO-token sidecar</text>
+                <text class="dg-t2" x="165" y="188" text-anchor="middle">bot check, no cookies</text>
+
+                <rect class="dg-box" x="298.5" y="148.5" width="250" height="54" rx="9" />
+                <text class="dg-t" x="423" y="171" text-anchor="middle">cookie state volume</text>
+                <text class="dg-t2" x="423" y="188" text-anchor="middle">rotates per run, outlives image</text>
+              </svg>
+            </div>
+          </figure>
+
           <p class="proj-stats">In production: 8,000+ users (3,000+ active) &middot; 70+ courses, 1,500+ lessons, 1,400+ videos &middot; 2,000+ paid orders &middot; 420M+ UZS processed</p>
           <div class="tags">
             <span class="tag">Go</span><span class="tag">Gin</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">MinIO</span><span class="tag">S3</span><span class="tag">CDN</span><span class="tag">Casbin</span>
           </div>
-        </a>
+        </article>
       </div>
     </div>
   </div>
@@ -1051,10 +1936,13 @@
   <div class="wrap">
     <h2>Open to backend roles where Go, throughput, and clean service boundaries matter.</h2>
     <div class="links">
-      <a href="mailto:axadjonovsardorbeck@gmail.com">
-        <span class="lbl">Email</span>
-        <span class="val">axadjonovsardorbeck@gmail.com</span>
-      </a>
+      <div class="row">
+        <a href="mailto:axadjonovsardorbeck@gmail.com">
+          <span class="lbl">Email</span>
+          <span class="val">axadjonovsardorbeck@gmail.com</span>
+        </a>
+        <button class="copy-btn" type="button" data-copy="axadjonovsardorbeck@gmail.com" aria-label="Copy email address">copy</button>
+      </div>
       <a href="tel:+998200070424">
         <span class="lbl">Phone</span>
         <span class="val">+998 20 007 04 24</span>
@@ -1165,6 +2053,66 @@
       nums.forEach(function (el) { nio.observe(el); });
     }
 
+    // diagram tabs
+    document.querySelectorAll(".dg-tabs").forEach(function (bar) {
+      var card = bar.closest(".proj");
+      if (!card) return;
+      var tabs = Array.prototype.slice.call(bar.querySelectorAll(".dg-tab"));
+      var panels = Array.prototype.slice.call(card.querySelectorAll("[data-dg-panel]"));
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          var want = tab.getAttribute("data-dg");
+          tabs.forEach(function (t) {
+            var on = t === tab;
+            t.classList.toggle("is-on", on);
+            t.setAttribute("aria-selected", on ? "true" : "false");
+          });
+          panels.forEach(function (p) {
+            p.hidden = p.getAttribute("data-dg-panel") !== want;
+          });
+        });
+      });
+    });
+
+    // copy-to-clipboard buttons
+    document.querySelectorAll(".copy-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var text = btn.getAttribute("data-copy") || "";
+        if (!text) return;
+
+        function done() {
+          var label = btn.textContent;
+          btn.textContent = "copied";
+          btn.classList.add("is-done");
+          setTimeout(function () {
+            btn.textContent = label;
+            btn.classList.remove("is-done");
+          }, 1600);
+        }
+
+        function fallback() {
+          try {
+            var ta = document.createElement("textarea");
+            ta.value = text;
+            ta.setAttribute("readonly", "");
+            ta.style.position = "absolute";
+            ta.style.left = "-9999px";
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand("copy");
+            document.body.removeChild(ta);
+            done();
+          } catch (e) {}
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else {
+          fallback();
+        }
+      });
+    });
+
     // scroll progress + sticky bar state
     var bar = document.getElementById("progress");
     var topbar = document.getElementById("topbar");
@@ -1184,5 +2132,9 @@
     onScroll();
   })();
 </script>
+
+<!-- Vercel Web Analytics (privacy-friendly, cookieless). Enable it in the Vercel
+     project dashboard; the script 404s harmlessly anywhere else. -->
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

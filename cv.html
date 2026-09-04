@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sardorbek Axadjonov — CV</title>
+<meta name="description" content="One-page résumé — Sardorbek Axadjonov, Go backend developer and team lead." />
+<meta name="robots" content="noindex" />
+<!--
+  Print source for /cv.pdf.
+  Regenerate:
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+    --headless --disable-gpu --no-pdf-header-footer \
+    --print-to-pdf=cv.pdf --virtual-time-budget=6000 cv.html
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" />
+
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #1b2430;
+    --ink-2: #59626f;
+    --ink-3: #8a929d;
+    --rule: #dce0e6;
+    --rule-strong: #b7bec8;
+    --accent: #1f3f7a;
+    --backdrop: #e7eaef;
+
+    --f-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { background: var(--backdrop); }
+
+  body {
+    margin: 0;
+    background: var(--backdrop);
+    color: var(--ink);
+    font-family: var(--f-sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 26px 16px 60px;
+  }
+
+  .bar {
+    max-width: 210mm;
+    margin: 0 auto 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .bar button {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    background: var(--paper);
+    color: var(--ink-2);
+    border: 1px solid var(--rule-strong);
+    border-radius: 6px;
+    padding: 7px 12px;
+    cursor: pointer;
+  }
+  .bar button:hover { color: var(--ink); border-color: var(--ink-3); }
+  .bar .hint {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--ink-3);
+    align-self: center;
+    margin-right: auto;
+  }
+
+  .sheet {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 10mm 13mm 9mm;
+    box-shadow: 0 1px 3px rgba(20, 28, 40, 0.14), 0 24px 60px -20px rgba(20, 28, 40, 0.3);
+  }
+
+  .topline {
+    height: 3px;
+    background: var(--accent);
+    margin: -10mm -13mm 5mm;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  header .name {
+    font-size: 19pt;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0;
+  }
+  header .title {
+    font-family: var(--f-mono);
+    font-size: 8.8pt;
+    color: var(--accent);
+    margin-top: 3px;
+  }
+  header .meta {
+    font-family: var(--f-mono);
+    font-size: 8.3pt;
+    color: var(--ink-2);
+    margin-top: 5px;
+    line-height: 1.45;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px 18px;
+    flex-wrap: wrap;
+  }
+  header .meta .meta-l div + div { color: var(--ink-3); }
+  header .meta a { color: var(--ink-2); text-decoration: none; }
+  header .meta .meta-r a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  header .meta .sep { color: var(--ink-3); margin: 0 5px; }
+
+  .summary {
+    font-size: 8.9pt;
+    line-height: 1.4;
+    color: var(--ink);
+    margin: 6px 0 2px;
+    max-width: 64em;
+  }
+
+  .doc {
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    gap: 0 22px;
+    margin-top: 4.5mm;
+  }
+  .rail > section { margin-bottom: 4mm; }
+  .main > section { margin-bottom: 2.3mm; }
+  section:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-size: 8.6pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    color: var(--ink);
+    margin: 0 0 4px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--rule-strong);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  h2::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    flex-shrink: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .skills { display: flex; flex-direction: column; gap: 4px; }
+  .skills .grp { font-size: 8.3pt; line-height: 1.3; }
+  .skills .k {
+    font-family: var(--f-mono);
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-3);
+    display: block;
+  }
+  .skills .v { color: var(--ink); }
+
+  .rail .blk { font-size: 8.7pt; line-height: 1.45; }
+  .rail .blk strong { font-weight: 600; }
+  .rail .blk .muted { color: var(--ink-2); }
+
+  .item { margin-bottom: 1.9mm; }
+  .item:last-child { margin-bottom: 0; }
+  .item .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .item .org { font-size: 9.1pt; font-weight: 600; color: var(--ink); }
+  .item .org .role { font-weight: 400; color: var(--ink-2); }
+  .item .date {
+    font-family: var(--f-mono);
+    font-size: 7.8pt;
+    color: var(--ink-2);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  ul.b { margin: 3px 0 0; padding: 0; list-style: none; }
+  ul.b li {
+    position: relative;
+    padding-left: 11px;
+    font-size: 8.7pt;
+    line-height: 1.27;
+    margin-bottom: 1px;
+  }
+  ul.b li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  ul.b li:last-child { margin-bottom: 0; }
+  b.metric { font-weight: 600; color: var(--accent); }
+
+  @media print {
+    @page { size: A4; margin: 8mm 11mm; }
+    html, body { background: #fff; padding: 0; }
+    .bar { display: none; }
+    .sheet {
+      max-width: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    .topline { margin: 0 0 6mm; }
+    .item { break-inside: avoid; }
+    h2 { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <span class="hint">Print / ⌘P → Save as PDF · A4 · links stay clickable</span>
+  <button type="button" id="printBtn">Save as PDF</button>
+</div>
+
+<div class="sheet">
+  <div class="topline"></div>
+
+  <header>
+    <h1 class="name">Sardorbek Axadjonov</h1>
+    <div class="title">Backend Developer</div>
+    <div class="meta">
+      <div class="meta-l">
+        <div><a href="tel:+998200070424">+998 20 007 04 24</a><span class="sep">·</span><a href="mailto:axadjonovsardorbeck@gmail.com">axadjonovsardorbeck@gmail.com</a></div>
+        <div>Tashkent, Uzbekistan</div>
+      </div>
+      <div class="meta-r">
+        <a href="https://github.com/axadjonovsardorbek" target="_blank" rel="noopener">GitHub</a>
+        <span class="sep">·</span><a href="https://www.linkedin.com/in/sardorbek-axadjonov-b28603295/" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="sep">·</span><a href="https://t.me/axadjonovsardorbek" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </header>
+
+  <p class="summary">
+    Backend developer with 2+ years of Go in production, building microservices and event-driven
+    serverless systems for travel, e-commerce, and fleet-management platforms. At UDEVS I lead a
+    5-person cross-functional team delivering two Furasentr products, with 90%+ test coverage on
+    booking and payment paths and k6 load tests at 500–700 RPS on the Knative deployment.
+  </p>
+
+  <div class="doc">
+    <aside class="rail">
+      <section>
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="grp"><span class="k">Language</span><span class="v">Go</span></div>
+          <div class="grp"><span class="k">Data</span><span class="v">PostgreSQL, pgvector, Redis, MongoDB, SQL</span></div>
+          <div class="grp"><span class="k">Services</span><span class="v">REST, gRPC, Gin, chi, Knative Eventing / CloudEvents</span></div>
+          <div class="grp"><span class="k">Auth</span><span class="v">JWT, OTP, Casbin (RBAC)</span></div>
+          <div class="grp"><span class="k">Storage</span><span class="v">MinIO, S3, CDN</span></div>
+          <div class="grp"><span class="k">Infra</span><span class="v">Knative / FaaS, Docker, GitLab CI, goose, k6, Grafana</span></div>
+          <div class="grp"><span class="k">Integrations</span><span class="v">Click, Payme, Firebase FCM, Telegram, Google Gemini, Yandex Maps</span></div>
+          <div class="grp"><span class="k">Architecture</span><span class="v">Microservices, event-driven, serverless, monolithic</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="blk">
+          <strong>Najot Ta'lim</strong><br />
+          <span class="muted">Go Foundation + Bootcamp · Major: Golang</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Spoken Languages</h2>
+        <div class="blk"><span class="muted">Uzbek (native) · Russian (B2) · English (B1)</span></div>
+      </section>
+    </aside>
+
+    <div class="main">
+      <section>
+        <h2>Experience</h2>
+
+        <div class="item">
+          <div class="hd">
+            <span class="org">UDEVS <span class="role">— Backend Developer · Team Lead</span></span>
+            <span class="date">Feb 2026 – Present</span>
+          </div>
+          <ul class="b">
+            <li>Lead the project team for two Furasentr products — 5 people across frontend, backend, mobile, QA, and PM; task breakdown, code review, and release coordination on a Knative serverless, event-driven stack.</li>
+            <li><strong>Furasentr Autopark</strong> (multi-tenant fleet SaaS): built the backend for four role-based app surfaces — per-company scoping enforced on every fleet call, trip / vehicle assignment, multi-device sessions, analytics, Yandex geocoder. Telemetry keeps per-trip state in cache and rejects out-of-order points; a fix within ~50 m folds into a stop cluster and never reaches the database, and the first point past it flushes one row with its dwell time — an hour parked writes <b class="metric">1</b> row, not ~180. Access checks cache the allow for 30 s and never the block, and blocking an owner cascades invalidation through every company and member.</li>
+            <li><strong>Furasentr</strong> (truck-parts e-commerce, <b class="metric">11</b> Go services): built the ordering service — native Go PDF invoicing, Click and Payme over JSON-RPC, WebP / CDN images, Firebase fan-out — plus BuckyDrop purchase orders, Measoft delivery, and an OX ERP sync. Two-step AI image search over pgvector: Gemini crops every part, only the tapped crop is embedded and searched, and a miss widens the filter brand + model → brand → catalogue-wide. Catalog reads sit behind a 30 s cache fronted by <em>singleflight</em>, so a burst of identical requests becomes one query.</li>
+            <li><strong>CentralTour</strong> (flight &amp; hotel platform): owned the markup / commission engine — rules matched across <b class="metric">7</b> dimensions (platform, geography, aggregator, service, hotel, agency, agent profile), one winner per level by specificity; platform layers apply in parallel on a single net base while partner layers cascade (agency, then self), so no other agent's markup can leak in. Non-UZS fares priced in provider currency with FX frozen at quote, and every quote snapshotted so payment charges what was shown. Integrated GoGlobal, TBO, and Dida; built the admin-panel backend solo, with agency / platform scope filters on every query.</li>
+            <li>Optimised Redis caching and parallelised independent queries in CRUD handlers that previously ran sequentially, across Furasentr and Autopark; load-tested with k6 to <b class="metric">700</b> and <b class="metric">500 RPS</b> on the Knative deployment, <b class="metric">90%+</b> test coverage on booking / payment paths, run in GitLab CI.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="hd">
+            <span class="org">Cody Soft <span class="role">— Golang Developer (remote)</span></span>
+            <span class="date">Sep 2024 – Feb 2026</span>
+          </div>
+          <ul class="b">
+            <li>Built start-up products on microservice and monolithic architectures — gRPC between services, REST + Swagger at the edge, JWT + Casbin RBAC, PostgreSQL with Redis, MinIO media, goose migrations, Docker Compose.</li>
+            <li><strong>iMed</strong> (online learning platform, imedteam.uz) — sole backend for web-admin and mobile REST APIs: phone-OTP + JWT with Casbin RBAC, Firebase push, a Telegram ops bot, and a YouTube→S3 pipeline (yt-dlp with a PO-token sidecar clearing bot checks without cookies) via CDN. In production: <b class="metric">8,000+</b> users, <b class="metric">2,000+</b> paid orders, <b class="metric">420M+</b> UZS.</li>
+            <li>Click Merchant API (prepare / complete): MD5-signed, row-locked idempotent handlers (<b class="metric">SELECT … FOR UPDATE</b>) so retried callbacks never double-charge or double-enrol, with a RESERVED → PAID / CANCELLED / EXPIRED order state machine.</li>
+            <li>Promo-code engine — percent / fixed, per-user and total caps, validity windows, per-course scope — enforced by a redemptions ledger with partial unique indexes and cancel / expire release triggers.</li>
+            <li>Versioned Redis cache — an <em>entity:version</em> counter bumped on every write is folded into the cache key, so stale lists expire by TTL with no SCAN / KEYS.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="hd">
+            <span class="org">Vector-PVT <span class="role">— Golang Developer</span></span>
+            <span class="date">May 2025 – Jul 2025</span>
+          </div>
+          <ul class="b">
+            <li>Backend for the Vector-Taxi platform across user, admin, and business panels — RESTful APIs with Swagger, Casbin RBAC, and large PostgreSQL and MongoDB datasets.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var b = document.getElementById("printBtn");
+    if (b) {
+      b.addEventListener("click", function () {
+        try { window.print(); } catch (e) {}
+      });
+    }
+  })();
+</script>
+</body>
+</html>
