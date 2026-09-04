@@ -2136,5 +2136,12 @@
 <!-- Vercel Web Analytics (privacy-friendly, cookieless). Enable it in the Vercel
      project dashboard; the script 404s harmlessly anywhere else. -->
 <script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Vercel Speed Insights - tracks Core Web Vitals and page performance.
+     Enable it in the Vercel project dashboard. -->
+<script>
+  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
