@@ -1,0 +1,12 @@
+{
+  "name": "sardorbek-cv",
+  "version": "1.0.0",
+  "description": "Sardorbek Axadjonov - Go Backend Developer CV",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step required for static HTML'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
