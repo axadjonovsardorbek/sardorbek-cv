@@ -131,6 +131,19 @@ def json_ld(code, url, strings):
             "@type": "Person",
             "@id": person_id,
             "name": "Sardorbek Axadjonov",
+            # How the same person is written elsewhere: the short first name, the
+            # kh/h transliterations of the surname, the Cyrillic spelling, and the
+            # handle. Declaring them lets a search engine resolve every variant to
+            # this one entity instead of guessing.
+            "alternateName": [
+                "Sardor Axadjonov",
+                "Sardorbek Akhadjonov",
+                "Sardor Akhadjonov",
+                "Sardorbek Ahadjonov",
+                "Сардорбек Ахаджонов",
+                "Сардор Ахаджонов",
+                "axadjonovsardorbek",
+            ],
             "givenName": "Sardorbek",
             "familyName": "Axadjonov",
             "jobTitle": t("Backend Developer"),

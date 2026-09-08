@@ -1,7 +1,6 @@
 {
  "Sardorbek Axadjonov — Go Backend Developer": "Сардорбек Ахаджонов — Go backend-разработчик",
  "Go backend developer with 2+ years in production — microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms.": "Go backend-разработчик с 2+ годами в продакшене — микросервисы и событийно-ориентированные serverless-системы для travel, e-commerce и fleet-management платформ.",
- "Sardorbek Axadjonov, Go backend developer, Golang developer Tashkent, backend developer Uzbekistan, microservices, event-driven architecture, Knative, gRPC, PostgreSQL, Redis": "Сардорбек Ахаджонов, Go backend разработчик, Golang разработчик Ташкент, backend разработчик Узбекистан, микросервисы, событийно-ориентированная архитектура, Knative, gRPC, PostgreSQL, Redis",
  "Microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms. 2+ years of Go in production.": "Микросервисы и событийно-ориентированные serverless-системы для travel, e-commerce и fleet-management платформ. 2+ года Go в продакшене.",
  "Sardorbek Axadjonov — Go backend developer": "Сардорбек Ахаджонов — Go backend-разработчик",
  "Microservices and event-driven serverless systems. 2+ years of Go in production.": "Микросервисы и событийно-ориентированные serverless-системы. 2+ года Go в продакшене.",
@@ -145,5 +144,6 @@
  "light / dark": "светлая / тёмная",
  "Dark theme": "Тёмная тема",
  "Light theme": "Светлая тема",
- "No matches": "Совпадений нет"
+ "No matches": "Совпадений нет",
+ "Sardorbek Axadjonov, Sardor Axadjonov, Sardorbek Akhadjonov, Sardor Akhadjonov, Go backend developer, Golang developer Tashkent, backend developer Uzbekistan, microservices, event-driven architecture, Knative, gRPC, PostgreSQL, Redis": "Сардорбек Ахаджонов, Сардор Ахаджонов, Sardorbek Axadjonov, Sardor Axadjonov, Go backend разработчик, Golang разработчик Ташкент, backend разработчик Узбекистан, микросервисы, событийно-ориентированная архитектура, Knative, gRPC, PostgreSQL, Redis"
 }

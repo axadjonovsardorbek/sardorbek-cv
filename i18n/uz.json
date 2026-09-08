@@ -1,7 +1,6 @@
 {
  "Sardorbek Axadjonov — Go Backend Developer": "Sardorbek Axadjonov — Go backend dasturchi",
  "Go backend developer with 2+ years in production — microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms.": "Go backend dasturchi, 2+ yil produksiyada — sayohat, e-commerce va avtopark boshqaruvi platformalari uchun mikroservislar va hodisaga asoslangan serverless tizimlar.",
- "Sardorbek Axadjonov, Go backend developer, Golang developer Tashkent, backend developer Uzbekistan, microservices, event-driven architecture, Knative, gRPC, PostgreSQL, Redis": "Sardorbek Axadjonov, Go backend dasturchi, Golang dasturchi Toshkent, backend dasturchi O'zbekiston, mikroservislar, hodisaga asoslangan arxitektura, Knative, gRPC, PostgreSQL, Redis",
  "Microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms. 2+ years of Go in production.": "Sayohat, e-commerce va avtopark boshqaruvi platformalari uchun mikroservislar va hodisaga asoslangan serverless tizimlar. Produksiyada 2+ yil Go tajribasi.",
  "Sardorbek Axadjonov — Go backend developer": "Sardorbek Axadjonov — Go backend dasturchi",
  "Microservices and event-driven serverless systems. 2+ years of Go in production.": "Mikroservislar va hodisaga asoslangan serverless tizimlar. Produksiyada 2+ yil Go tajribasi.",
@@ -145,5 +144,6 @@
  "light / dark": "yorug' / qorong'i",
  "Dark theme": "Qorong'i mavzu",
  "Light theme": "Yorug' mavzu",
- "No matches": "Mos kelmadi"
+ "No matches": "Mos kelmadi",
+ "Sardorbek Axadjonov, Sardor Axadjonov, Sardorbek Akhadjonov, Sardor Akhadjonov, Go backend developer, Golang developer Tashkent, backend developer Uzbekistan, microservices, event-driven architecture, Knative, gRPC, PostgreSQL, Redis": "Sardorbek Axadjonov, Sardor Axadjonov, Sardorbek Akhadjonov, Go backend dasturchi, Golang dasturchi Toshkent, backend dasturchi O'zbekiston, mikroservislar, hodisaga asoslangan arxitektura, Knative, gRPC, PostgreSQL, Redis"
 }
