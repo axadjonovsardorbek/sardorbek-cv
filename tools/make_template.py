@@ -150,7 +150,7 @@ def parameterise(t):
         # root-absolute so /ru/ and /uz/ resolve the same assets
         ('<link rel="icon" href="favicon.svg"', '<link rel="icon" href="/favicon.svg"'),
         ('<link rel="apple-touch-icon" href="og.png" />',
-         '<link rel="apple-touch-icon" href="/og.png" />'),
+         '<link rel="apple-touch-icon" href="/apple-touch-icon.png" />'),
         ('href="cv.pdf"', 'href="/cv.pdf"'),
         ('<link rel="canonical" href="https://axadjonovsardorbek.uz/" />',
          '<link rel="canonical" href="__CANONICAL__" />\n<!--HREFLANG-->'),

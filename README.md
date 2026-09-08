@@ -20,7 +20,11 @@ Static site. One small build step generates the three language pages.
 | `cv.pdf` | Generated résumé, linked from the hero "Download CV" button |
 | `assets/og.html` | Source for the social preview image |
 | `og.png` | Generated 1200×630 Open Graph image |
-| `favicon.svg` | Tab icon |
+| `assets/icon.html` | Source for the SA monogram icons |
+| `favicon.ico`, `favicon.svg` | Tab icon — ICO for Safari and crawlers, SVG for everything modern |
+| `apple-touch-icon.png` | 180×180 iOS home-screen icon |
+| `icon-192.png`, `icon-512.png`, `site.webmanifest` | Android / installable icon set |
+| `favicon-32.png` | Source bitmap the ICO is wrapped around |
 | `robots.txt`, `sitemap.xml` | Crawler hints; `cv.html` and `assets/` are excluded |
 | `googlee05561e621d94a1c.html`, `yandex_34e841ce5c9772d1.html` | Search console verification files — keep both reachable |
 
@@ -125,6 +129,32 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
 
 Re-run these after editing `assets/og.html` or `cv.html`.
+
+Icons come from `assets/icon.html`. Chrome will not open a window narrower than
+about 500px, so the small sizes are downscaled from the 512 master rather than
+screenshotted directly — screenshotting at 32×32 silently yields a crop of the
+top-left corner instead.
+
+```bash
+"$CHROME" --headless --disable-gpu --hide-scrollbars \
+  --window-size=512,512 --screenshot=icon-512.png \
+  --virtual-time-budget=7000 assets/icon.html
+
+for S in 32:favicon-32 180:apple-touch-icon 192:icon-192; do
+  cp icon-512.png "${S#*:}.png"
+  sips -z "${S%%:*}" "${S%%:*}" "${S#*:}.png" >/dev/null
+done
+
+# favicon.ico is the 32px PNG in an ICO container
+python3 -c "
+import struct
+png = open('favicon-32.png','rb').read()
+open('favicon.ico','wb').write(
+    struct.pack('<HHH', 0, 1, 1)
+    + struct.pack('<BBBBHHII', 32, 32, 0, 0, 1, 32, len(png), 22)
+    + png)
+"
+```
 
 The résumé PDF is English only and is linked from all three language pages.
 

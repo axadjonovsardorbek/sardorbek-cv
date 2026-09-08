@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SA icon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&display=swap" />
+<style>
+  /* Full-bleed square: iOS and Android apply their own mask, so the artwork
+     must not round its own corners. Screenshot this at 16, 32, 180, 192, 512. */
+  html, body { margin: 0; height: 100%; }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b0a09;
+  }
+  .mark {
+    font-family: "Bricolage Grotesque", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 46vw;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #e8944a;
+    /* Optical centring: the cap-height block sits high in the em box, and
+       letter-spacing adds a trailing gap after the A that pushes the pair right. */
+    transform: translate(-1.4%, -2.5%);
+  }
+</style>
+</head>
+<body><span class="mark">SA</span></body>
+</html>
