@@ -3,4 +3,4 @@ Allow: /
 Disallow: /assets/
 Disallow: /cv.html
 
-Sitemap: https://axadjonovsardorbek.uz/sitemap.xml
+Sitemap: https://www.axadjonovsardorbek.uz/sitemap.xml

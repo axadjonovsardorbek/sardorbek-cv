@@ -16,7 +16,9 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://axadjonovsardorbek.uz"
+# The bare host 308-redirects here, so every URL the page declares
+# must use www or a crawler sees canonical and redirect disagree.
+SITE = "https://www.axadjonovsardorbek.uz"
 
 LOCALES = [
     # code, output dir, url path, og:locale, display label
@@ -105,7 +107,7 @@ def json_ld(code, url, strings):
             "mainEntity": {"@id": person_id},
             "primaryImageOfPage": {"@id": image_id},
             "inLanguage": code,
-            "dateModified": "2026-09-08",
+            "dateModified": "2026-09-09",
         },
         {
             "@type": "ImageObject",
