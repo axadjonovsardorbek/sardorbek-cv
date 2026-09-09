@@ -145,5 +145,7 @@
  "Dark theme": "Тёмная тема",
  "Light theme": "Светлая тема",
  "No matches": "Совпадений нет",
- "Sardorbek Axadjonov, Sardor Axadjonov, Sardorbek Akhadjonov, Sardor Akhadjonov, Go backend developer, Golang developer Tashkent, backend developer Uzbekistan, microservices, event-driven architecture, Knative, gRPC, PostgreSQL, Redis": "Сардорбек Ахаджонов, Сардор Ахаджонов, Sardorbek Axadjonov, Sardor Axadjonov, Go backend разработчик, Golang разработчик Ташкент, backend разработчик Узбекистан, микросервисы, событийно-ориентированная архитектура, Knative, gRPC, PostgreSQL, Redis"
+ "Sardorbek Axadjonov, Sardor Axadjonov, Sardorbek Akhadjonov, Sardor Akhadjonov, Go backend developer, Golang developer Tashkent, backend developer Uzbekistan, microservices, event-driven architecture, Knative, gRPC, PostgreSQL, Redis": "Сардорбек Ахаджонов, Сардор Ахаджонов, Sardorbek Axadjonov, Sardor Axadjonov, Go backend разработчик, Golang разработчик Ташкент, backend разработчик Узбекистан, микросервисы, событийно-ориентированная архитектура, Knative, gRPC, PostgreSQL, Redis",
+ "Sardorbek Axadjonov — Go backend developer in Tashkent, Uzbekistan: 2+ years of Go in production, 700 RPS in k6 load tests on Knative, 90%+ coverage on booking paths": "Сардорбек Ахаджонов — Go backend-разработчик из Ташкента, Узбекистан: 2+ года Go в продакшене, 700 RPS в нагрузочных тестах k6 на Knative, 90%+ покрытия путей бронирования",
+ "Go backend developer &mdash; Tashkent, Uzbekistan": "Go backend-разработчик &mdash; Ташкент, Узбекистан"
 }

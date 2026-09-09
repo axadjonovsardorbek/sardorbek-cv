@@ -117,6 +117,9 @@ def json_ld(code, url, strings):
             "width": 1200,
             "height": 630,
             "encodingFormat": "image/png",
+            # The page renders this same file in a visible <img>, so it is the
+            # one a thumbnail should come from rather than a diagram or icon.
+            "representativeOfPage": True,
             "caption": t("Sardorbek Axadjonov — Go backend developer"),
         },
         {
@@ -214,6 +217,7 @@ def render(template, code, out_dir, path, og_locale):
 
     page = PLACEHOLDER.sub(swap, template)
     page = page.replace("__LANG__", code)
+    page = page.replace("__SITE__", SITE)
     page = page.replace("__CANONICAL__", url)
     page = page.replace("__OGLOCALE__", og_locale)
     page = page.replace("<!--FONTS-->", FONTS.get(code, FONTS["default"]))

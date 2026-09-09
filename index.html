@@ -20,7 +20,13 @@
 <link rel="alternate" hreflang="uz" href="https://www.axadjonovsardorbek.uz/uz/" />
 <link rel="alternate" hreflang="x-default" href="https://www.axadjonovsardorbek.uz/" />
 
-<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<!-- Google only accepts a favicon whose side is a multiple of 48px; a 32-only
+     icon is dropped and the result shows the globe placeholder. The ico now
+     carries 32, 48 and 96, and the 96 is declared separately because the
+     crawler reads sizes off the link rather than opening the container. -->
+<link rel="icon" href="/favicon.ico" sizes="32x32 48x48 96x96" />
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96" />
+<link rel="icon" href="/favicon-144.png" type="image/png" sizes="144x144" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
@@ -30,8 +36,8 @@
 <meta property="og:title" content="Sardorbek Axadjonov — Go Backend Developer" />
 <meta property="og:description" content="Microservices and event-driven serverless systems for travel, e-commerce, and fleet-management platforms. 2+ years of Go in production." />
 <meta property="og:url" content="https://www.axadjonovsardorbek.uz/" />
-<meta property="og:image" content="https://axadjonovsardorbek.uz/og.png" />
-<meta property="og:image:secure_url" content="https://axadjonovsardorbek.uz/og.png" />
+<meta property="og:image" content="https://www.axadjonovsardorbek.uz/og.png" />
+<meta property="og:image:secure_url" content="https://www.axadjonovsardorbek.uz/og.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -44,7 +50,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Sardorbek Axadjonov — Go Backend Developer" />
 <meta name="twitter:description" content="Microservices and event-driven serverless systems. 2+ years of Go in production." />
-<meta name="twitter:image" content="https://axadjonovsardorbek.uz/og.png" />
+<meta name="twitter:image" content="https://www.axadjonovsardorbek.uz/og.png" />
 <meta name="twitter:image:alt" content="Sardorbek Axadjonov — Go backend developer" />
 
 <script type="application/ld+json">
@@ -91,6 +97,7 @@
       "width": 1200,
       "height": 630,
       "encodingFormat": "image/png",
+      "representativeOfPage": true,
       "caption": "Sardorbek Axadjonov — Go backend developer"
     },
     {
@@ -754,6 +761,52 @@
   }
   @media (max-width: 900px) { .metrics { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 460px) { .metrics { grid-template-columns: 1fr; } }
+
+  /* ---------- profile card ----------
+     The only raster image on the page. Every other visual here is inline SVG
+     or a CSS gradient, and a search crawler can offer none of those as a
+     result thumbnail — it needs an <img> it can fetch on its own. This is the
+     same card a shared link previews, so it carries its weight twice. It is
+     deliberately not .reveal: that class starts at opacity 0, and the one
+     image that has to be indexable should never depend on script running. */
+  .profile-card {
+    margin: 0 0 clamp(2.5rem, 6vw, 4rem);
+    display: grid;
+    gap: 0.85rem;
+    justify-items: center;
+  }
+  .profile-card .frame {
+    width: 100%;
+    max-width: 680px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    background: var(--surface-solid);
+    transition: transform 0.45s var(--ease), border-color 0.45s, box-shadow 0.45s var(--ease);
+  }
+  .profile-card .frame:hover {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+    box-shadow: var(--card-shadow-hi);
+  }
+  .profile-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+  }
+  .profile-card figcaption {
+    font-family: var(--f-mono);
+    font-size: var(--step--2);
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .profile-card .frame { transition: none; }
+    .profile-card .frame:hover { transform: none; }
+  }
 
   /* ---------- section shell ---------- */
   section.block {
@@ -1819,6 +1872,14 @@
       <div class="cap">test coverage on<br />booking / payment paths</div>
     </div>
   </div>
+
+  <figure class="profile-card">
+    <div class="frame">
+      <img src="/og.png" width="1200" height="630" decoding="async"
+           alt="Sardorbek Axadjonov — Go backend developer in Tashkent, Uzbekistan: 2+ years of Go in production, 700 RPS in k6 load tests on Knative, 90%+ coverage on booking paths" />
+    </div>
+    <figcaption>Go backend developer &mdash; Tashkent, Uzbekistan</figcaption>
+  </figure>
 </div>
 
 <section class="block" id="stack">
