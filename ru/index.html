@@ -1950,6 +1950,42 @@
         <span class="rule"></span>
       </div>
       <div class="projects">
+        <article class="proj proj-static reveal" id="proj-eavtodrom">
+          <div class="head">
+            <h3><a href="https://eavtodrom.uz" target="_blank" rel="noopener">eAvtodrom <span class="arrow">&#9653;</span></a></h3>
+            <span class="kind">симулятор экзамена по вождению &middot; eavtodrom.uz</span>
+          </div>
+          <p>Мой собственный продукт, сделанный целиком: 3D-симулятор практического экзамена по вождению в Узбекистане, которым пользуются ученики автошкол в вебе, на Android и iOS. Бэкенд на Go и PostgreSQL &mdash; вход через Google и Telegram, дневные лимиты игр, магазин с оплатой через inPAY и промокодами, реферальные ссылки автошкол с долей выручки, live-присутствие и админ-панель. Внутриигровая экономика открытого города Ташкента: журнал кошелька с блокировкой строк, рынок машин, дома, банк, а оплата такси и ежедневные задания считаются на сервере, так что клиент не может их присвоить. Клиент на three.js: физика машины с механикой и автоматом, 12 упражнений экзамена с официальной таблицей штрафов, город из данных OpenStreetMap, загружающийся за секунды на бюджетных телефонах; приложения на Capacitor в Google Play.</p>
+          <figure class="diagram">
+            <figcaption>Один сервис на Go за веб-игрой и мобильными приложениями</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 178" role="img" aria-label="Игра на three.js в вебе и внутри приложений Android и iOS работает с одним Go API поверх PostgreSQL. Колбэки оплаты inPAY и админ-панель обращаются к тому же API; оплаты и награды считаются на сервере.">
+                <defs>
+                  <marker id="ah9" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+                <rect class="dg-box" x="0.5" y="34.5" width="150" height="58" rx="9" />
+                <text class="dg-t" x="75" y="59" text-anchor="middle">three.js game</text>
+                <text class="dg-t2" x="75" y="76" text-anchor="middle">web &middot; Android &middot; iOS</text>
+                <path class="dg-line" d="M151 63 H215" marker-end="url(#ah9)" />
+                <rect class="dg-box-a" x="218.5" y="34.5" width="200" height="58" rx="9" />
+                <text class="dg-t" x="318" y="59" text-anchor="middle">Go API</text>
+                <text class="dg-t2" x="318" y="76" text-anchor="middle">play limits &middot; economy &middot; shop</text>
+                <path class="dg-line" d="M419 63 H483" marker-end="url(#ah9)" />
+                <rect class="dg-box" x="486.5" y="34.5" width="213" height="58" rx="9" />
+                <text class="dg-t" x="593" y="59" text-anchor="middle">PostgreSQL</text>
+                <text class="dg-t2" x="593" y="76" text-anchor="middle">wallet ledger &middot; FOR UPDATE</text>
+                <rect class="dg-box" x="218.5" y="118.5" width="96" height="44" rx="9" />
+                <text class="dg-t2" x="266" y="145" text-anchor="middle">inPAY</text>
+                <rect class="dg-box" x="322.5" y="118.5" width="96" height="44" rx="9" />
+                <text class="dg-t2" x="370" y="145" text-anchor="middle">admin</text>
+                <path class="dg-line" d="M266 118 V96" marker-end="url(#ah9)" />
+                <path class="dg-line" d="M370 118 V96" marker-end="url(#ah9)" />
+              </svg>
+            </div>
+          </figure>
+        </article>
         <article class="proj proj-static reveal" id="proj-centraltour">
           <div class="head">
             <h3><a href="https://new.centraltour.uz/en/flights" target="_blank" rel="noopener">CentralTour <span class="arrow">&#9653;</span></a></h3>
@@ -2974,6 +3010,7 @@
       { ic: "{}", label: "CentralTour", sub: "проект · движок наценок", run: jump("#proj-centraltour") },
       { ic: "{}", label: "Furasentr", sub: "проект · e-commerce запчастей", run: jump("#proj-furasentr") },
       { ic: "{}", label: "Furasentr Autopark", sub: "проект · управление автопарком", run: jump("#proj-autopark") },
+      { ic: "{}", label: "eAvtodrom", sub: "проект · симулятор экзамена по вождению", run: jump("#proj-eavtodrom") },
       { ic: "{}", label: "iMed", sub: "проект · платформа обучения", run: jump("#proj-imed") },
       { ic: "↓", label: "Скачать резюме", sub: "pdf", run: openUrl("cv.pdf") },
       { ic: "@", label: "Скопировать почту", sub: EMAIL, run: copyAction(EMAIL, "Почта") },

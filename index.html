@@ -1951,6 +1951,42 @@
         <span class="rule"></span>
       </div>
       <div class="projects">
+        <article class="proj proj-static reveal" id="proj-eavtodrom">
+          <div class="head">
+            <h3><a href="https://eavtodrom.uz" target="_blank" rel="noopener">eAvtodrom <span class="arrow">&#9653;</span></a></h3>
+            <span class="kind">driving-exam simulator &middot; eavtodrom.uz</span>
+          </div>
+          <p>My own product, built end to end: a 3D simulator of Uzbekistan's practical driving exam that learner drivers use on the web, Android and iOS. Go backend on PostgreSQL &mdash; Google and Telegram sign-in, daily play limits, a shop with inPAY payments and promo codes, driving-school referral links with a revenue share, live presence and an admin panel. An in-game economy for an open Tashkent city: a wallet ledger with row-locked moves, a car market, homes, a bank, and taxi fares and daily tasks worked out on the server so the client cannot claim them. Three.js client: vehicle physics with manual and automatic gearboxes, the 12 exam exercises with the official penalty table, a city built from OpenStreetMap data, tuned to load in seconds on budget phones; Capacitor apps on Google Play.</p>
+          <figure class="diagram">
+            <figcaption>One Go service behind the web game and the phone apps</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 178" role="img" aria-label="The three.js game, on the web and inside the Android and iOS apps, talks to one Go API backed by PostgreSQL. inPAY payment callbacks and the admin panel reach the same API; fares and rewards are computed on the server.">
+                <defs>
+                  <marker id="ah9" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+                <rect class="dg-box" x="0.5" y="34.5" width="150" height="58" rx="9" />
+                <text class="dg-t" x="75" y="59" text-anchor="middle">three.js game</text>
+                <text class="dg-t2" x="75" y="76" text-anchor="middle">web &middot; Android &middot; iOS</text>
+                <path class="dg-line" d="M151 63 H215" marker-end="url(#ah9)" />
+                <rect class="dg-box-a" x="218.5" y="34.5" width="200" height="58" rx="9" />
+                <text class="dg-t" x="318" y="59" text-anchor="middle">Go API</text>
+                <text class="dg-t2" x="318" y="76" text-anchor="middle">play limits &middot; economy &middot; shop</text>
+                <path class="dg-line" d="M419 63 H483" marker-end="url(#ah9)" />
+                <rect class="dg-box" x="486.5" y="34.5" width="213" height="58" rx="9" />
+                <text class="dg-t" x="593" y="59" text-anchor="middle">PostgreSQL</text>
+                <text class="dg-t2" x="593" y="76" text-anchor="middle">wallet ledger &middot; FOR UPDATE</text>
+                <rect class="dg-box" x="218.5" y="118.5" width="96" height="44" rx="9" />
+                <text class="dg-t2" x="266" y="145" text-anchor="middle">inPAY</text>
+                <rect class="dg-box" x="322.5" y="118.5" width="96" height="44" rx="9" />
+                <text class="dg-t2" x="370" y="145" text-anchor="middle">admin</text>
+                <path class="dg-line" d="M266 118 V96" marker-end="url(#ah9)" />
+                <path class="dg-line" d="M370 118 V96" marker-end="url(#ah9)" />
+              </svg>
+            </div>
+          </figure>
+        </article>
         <article class="proj proj-static reveal" id="proj-centraltour">
           <div class="head">
             <h3><a href="https://new.centraltour.uz/en/flights" target="_blank" rel="noopener">CentralTour <span class="arrow">&#9653;</span></a></h3>
@@ -2975,6 +3011,7 @@
       { ic: "{}", label: "CentralTour", sub: "project · booking + markup engine", run: jump("#proj-centraltour") },
       { ic: "{}", label: "Furasentr", sub: "project · freight marketplace", run: jump("#proj-furasentr") },
       { ic: "{}", label: "Furasentr Autopark", sub: "project · fleet management", run: jump("#proj-autopark") },
+      { ic: "{}", label: "eAvtodrom", sub: "project · driving-exam simulator", run: jump("#proj-eavtodrom") },
       { ic: "{}", label: "iMed", sub: "project · learning platform", run: jump("#proj-imed") },
       { ic: "↓", label: "Download CV", sub: "pdf", run: openUrl("cv.pdf") },
       { ic: "@", label: "Copy email", sub: EMAIL, run: copyAction(EMAIL, "Email") },

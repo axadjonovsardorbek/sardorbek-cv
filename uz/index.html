@@ -1949,6 +1949,42 @@
         <span class="rule"></span>
       </div>
       <div class="projects">
+        <article class="proj proj-static reveal" id="proj-eavtodrom">
+          <div class="head">
+            <h3><a href="https://eavtodrom.uz" target="_blank" rel="noopener">eAvtodrom <span class="arrow">&#9653;</span></a></h3>
+            <span class="kind">haydovchilik imtihoni simulyatori &middot; eavtodrom.uz</span>
+          </div>
+          <p>O'zimning mahsulotim, boshidan oxirigacha o'zim qurganman: O'zbekistondagi amaliy haydovchilik imtihonining 3D simulyatori, o'quvchilar uni saytda, Android va iOS'da ishlatadi. PostgreSQL ustida Go backend &mdash; Google va Telegram orqali kirish, kunlik o'yin limitlari, inPAY to'lovlari va promokodli do'kon, avtomaktablar uchun daromad ulushli referal havolalar, jonli kuzatuv va admin panel. Ochiq Toshkent shahri uchun o'yin ichki iqtisodiyoti: qator qulflanadigan hamyon jurnali, mashina bozori, uylar, bank, hamda server hisoblaydigan taksi to'lovlari va kunlik vazifalar &mdash; mijoz ularni o'zi da'vo qila olmaydi. Three.js mijoz: mexanik va avtomat uzatmali mashina fizikasi, rasmiy jarima jadvali bilan 12 imtihon mashqi, OpenStreetMap ma'lumotlaridan qurilgan shahar, arzon telefonlarda soniyalarda yuklanadigan qilib sozlangan; Google Play'da Capacitor ilovalari.</p>
+          <figure class="diagram">
+            <figcaption>Sayt o'yini va telefon ilovalari ortida bitta Go servis</figcaption>
+            <div class="diagram-scroll">
+              <svg viewBox="0 0 700 178" role="img" aria-label="Three.js o'yini saytda ham, Android va iOS ilovalari ichida ham PostgreSQL ustidagi bitta Go API bilan ishlaydi. inPAY to'lov xabarlari va admin panel ham shu API'ga keladi; to'lovlar va mukofotlar serverda hisoblanadi.">
+                <defs>
+                  <marker id="ah9" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0 0 L8 4 L0 8 z" class="dg-head" />
+                  </marker>
+                </defs>
+                <rect class="dg-box" x="0.5" y="34.5" width="150" height="58" rx="9" />
+                <text class="dg-t" x="75" y="59" text-anchor="middle">three.js game</text>
+                <text class="dg-t2" x="75" y="76" text-anchor="middle">web &middot; Android &middot; iOS</text>
+                <path class="dg-line" d="M151 63 H215" marker-end="url(#ah9)" />
+                <rect class="dg-box-a" x="218.5" y="34.5" width="200" height="58" rx="9" />
+                <text class="dg-t" x="318" y="59" text-anchor="middle">Go API</text>
+                <text class="dg-t2" x="318" y="76" text-anchor="middle">play limits &middot; economy &middot; shop</text>
+                <path class="dg-line" d="M419 63 H483" marker-end="url(#ah9)" />
+                <rect class="dg-box" x="486.5" y="34.5" width="213" height="58" rx="9" />
+                <text class="dg-t" x="593" y="59" text-anchor="middle">PostgreSQL</text>
+                <text class="dg-t2" x="593" y="76" text-anchor="middle">wallet ledger &middot; FOR UPDATE</text>
+                <rect class="dg-box" x="218.5" y="118.5" width="96" height="44" rx="9" />
+                <text class="dg-t2" x="266" y="145" text-anchor="middle">inPAY</text>
+                <rect class="dg-box" x="322.5" y="118.5" width="96" height="44" rx="9" />
+                <text class="dg-t2" x="370" y="145" text-anchor="middle">admin</text>
+                <path class="dg-line" d="M266 118 V96" marker-end="url(#ah9)" />
+                <path class="dg-line" d="M370 118 V96" marker-end="url(#ah9)" />
+              </svg>
+            </div>
+          </figure>
+        </article>
         <article class="proj proj-static reveal" id="proj-centraltour">
           <div class="head">
             <h3><a href="https://new.centraltour.uz/en/flights" target="_blank" rel="noopener">CentralTour <span class="arrow">&#9653;</span></a></h3>
@@ -2973,6 +3009,7 @@
       { ic: "{}", label: "CentralTour", sub: "loyiha · ustama dvigateli", run: jump("#proj-centraltour") },
       { ic: "{}", label: "Furasentr", sub: "loyiha · ehtiyot qismlar e-commerce", run: jump("#proj-furasentr") },
       { ic: "{}", label: "Furasentr Autopark", sub: "loyiha · avtopark boshqaruvi", run: jump("#proj-autopark") },
+      { ic: "{}", label: "eAvtodrom", sub: "loyiha · haydovchilik imtihoni simulyatori", run: jump("#proj-eavtodrom") },
       { ic: "{}", label: "iMed", sub: "loyiha · ta'lim platformasi", run: jump("#proj-imed") },
       { ic: "↓", label: "Rezyumeni yuklash", sub: "pdf", run: openUrl("cv.pdf") },
       { ic: "@", label: "Pochtani nusxalash", sub: EMAIL, run: copyAction(EMAIL, "Pochta") },
